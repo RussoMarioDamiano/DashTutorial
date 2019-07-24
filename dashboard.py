@@ -2,6 +2,11 @@ import dash
 import dash_core_components as dcc
 import dash_html_components as html
 import dash_daq as daq
+import pandas as pd
+
+# Load the iris dataset
+df = pd.read_csv("https://raw.githubusercontent.com/RussoMarioDamiano/DashTutorial/master/iris.csv?")
+df.head()
 
 # Download a CSS template from the internet
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
